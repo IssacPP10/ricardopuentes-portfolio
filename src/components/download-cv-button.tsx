@@ -3,10 +3,10 @@ import { Download } from "lucide-react";
 
 export function DownloadCVButton() {
   const handleDownloadCV = () => {
-    const tempUrl = "/Curriculum_Issac_Puentes_Español_v1.pdf";
+    const tempUrl = "/Curriculum_Issac_Puentes_Español.pdf";
     const link = document.createElement("a");
     link.href = tempUrl;
-    link.download = "Curriculum_Issac_Puentes_Español_v1.pdf";
+    link.download = "Curriculum_Issac_Puentes_Español.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
